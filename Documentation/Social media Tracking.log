@@ -1,0 +1,150 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.4.8)  17 APR 2019 14:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Social media Tracking.tex"
+(./Social media Tracking.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 22 language(s) loaded.
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen103
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen106
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+(./Social media Tracking.aux)
+\openout1 = `"Social media Tracking.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+\c@lstlisting=\count96
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen107
+\scratchbox=\box28
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen108
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks17
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 37.
+ [1
+
+{/usr/local/texlive/2018basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (.
+/Social media Tracking.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `"Social media Tracking.toc"'.
+
+ [2]
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 77.
+
+(/usr/local/texlive/2018basic/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
+ [3] [4]
+[5] (./Social media Tracking.aux) ) 
+Here is how much of TeX's memory you used:
+ 2578 strings out of 494091
+ 33668 string characters out of 6163524
+ 148742 words of memory out of 5000000
+ 6287 multiletter control sequences out of 15000+600000
+ 9110 words of font info for 32 fonts, out of 8000000 for 9000
+ 319 hyphenation exceptions out of 8191
+ 26i,6n,42p,387b,1677s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018basic/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018basic/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018basic/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2018bas
+ic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2018b
+asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on "Social media Tracking.pdf" (5 pages, 94203 bytes).
+PDF statistics:
+ 48 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
