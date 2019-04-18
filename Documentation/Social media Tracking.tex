@@ -1,7 +1,7 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage{listings}
 \usepackage{color}
-% \usepackage{placeins}
+\usepackage{placeins}
  
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -15,7 +15,7 @@
     numberstyle=\tiny\color{codegray},
     stringstyle=\color{codepurple},
     basicstyle=\footnotesize,
-    breakatwhitespace=true,         
+    breakatwhitespace=false,         
     breaklines=true,                 
     captionpos=b,                    
     keepspaces=true,                 
@@ -58,21 +58,24 @@ Following this guide will help you understand how the program works.
 Beginning with the Facebook interface, the program will request access to the Facebook \textbf{Graph API} by authenticating with the website, making a request to access for the data of a particular page or profile and subsequently saving this profile data to a database where we can print it all out on excel.
 
 
-
+\newpage
+\FloatBarrier
 \section{Twitter}
 With Twitter, the method will utilise \textbf{Tweepy} which is a library that allows for quick access to the Twitter API.
-
 \subsection{Code Rundown}
 First we will begin with the dependencies required to gain the data:
 
 \begin{lstlisting}[language=python]
+		
 from tweepy import OAuthHandler
 from tweepy import API
 from tweepy import Cursor
 import sys
 \end{lstlisting}
 
-Here is the rundown on each dependency:
+
+\FloatBarrier
+Here in the code above, you can see the rundown on each dependency:
 \begin{itemize}
 	\item Tweepy is a Python library that we can use to access the Twitter API
 	\item OAuthHandler will allow us to painlessly authorise access to get data from the API itself
@@ -82,7 +85,7 @@ Here is the rundown on each dependency:
 \end{itemize}
 
 Then we will set up the keys to authorise our access to the Twitter API:
-
+	
 \begin{lstlisting}[language=python]
 
 # These are the keys from the app created on the developer account
@@ -93,7 +96,7 @@ access_token = "..."
 access_secret_token = "..."
 
 # This begins the authorisation process with the Twitter API so that the program can authenticate it self with the website
-
+	
 auth = OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret_token)
 auth_api = API(auth)
@@ -148,5 +151,58 @@ for name in name_dictionary:
 	name4_follower_count
 
 \end{lstlisting}
+
+\newpage
+\section{Twitch}
+Twitch has API authentication through your Twitch account with the same OAuth processes and application interfaces that are necessary for the API request.
+
+
+\newpage
+\section{Youtube}
+The Google developer console makes the Youtube Data API very accessible - all you require is a Google account to get an API key that is valid once you activate the Youtube Data API package on your account.
+\subsection{Code Rundown}
+Again we will begin with the dependencies that we are looking to use. For Youtube we are simply going to request some data from the Youtube Data API \textbf{without using a particular software development kit} which makes it more simplistic, requiring less installation.
+
+\begin{lstlisting}[language=python]
+
+import urllib.request
+import json
+
+key = "..."
+\end{lstlisting}
+
+The rundown:
+\begin{itemize}
+	\item Urllib.request is the library used to draw requests from the actual API
+	\item JSON allows us to read these objects and draw the important information we want from them
+	\item The key is your personal authentication to gain access to the API
+\end{itemize}
+
+Then we can call on channel handles to get information on the amount of subscribers they have using the JSON object we have called:
+
+\begin{lstlisting}[language=python]
+
+dictionary = ["pewdiepie","bgfilms", "rhettandlink2"]
+
+for name in dictionary:
+	# Requesting access to the API along with utilising the key to gain access
+    
+    data = urllib.request.urlopen("https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername="+name+"&key="+key).read()
+    
+    # Loading the JSON requested data and then searching for the subscriber count
+    subs = json.loads(data)["items"][0]["statistics"]["subscriberCount"]
+   
+    # Printing the output
+    print(name + " has " + "{:,d}".format(int(subs)) + " subscribers")
+    
+    # This will give us:
+   
+    pewdiepie has 94,317,649 subscribers
+	bgfilms has 4,122,055 subscribers
+	rhettandlink2 has 15,294,165 subscribers
+    
+\end{lstlisting}
+
+
 
 \end{document}
