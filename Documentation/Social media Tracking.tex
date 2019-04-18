@@ -155,7 +155,7 @@ for name in name_dictionary:
 \newpage
 \section{Twitch}
 Twitch has API authentication through your Twitch account with the same OAuth processes and application interfaces that are necessary for the API request.
-
+\subsection{Code Rundown}
 
 \newpage
 \section{Youtube}
@@ -203,6 +203,36 @@ for name in dictionary:
     
 \end{lstlisting}
 
+\section{Object Oriented Structure}
+Having discussed the various APIs that we are going to use, the next step is to discuss what type of structure we will use to access the required information across the board. Probably the most scalable and efficient structure to use with the ability to call numerous functions from would be using classes.
+
+The structure of a class provides a mean of bundling data and functionality together. Creating a class is creating a new type of object allowing \textit{instances of that object} to be created again and again.
+
+For the purposes of Social Media Tracking and Performance, we will create the influencer class which stores the data of each influencer in a new instance. From there, we can call functions as necessary on these influencers to gain information on their numbers through our APIs.
+
+\subsection{Code Rundown}
+Setting up the class is easy and we will give it a lot of variables related to the data that we want to collect.
+
+\begin{lstlisting}[language=python]
+
+class influencer:
+	def __init__(self, name, gender, gamer_tag, fb_tag, twitter_tag, yt_tag, insta_tag, twitch_tag)
+	self.name = name
+	self.gender = gender
+	self.gamer_tag = gamer_tag
+	self.fb_tag = fb_tag # Facebook Take
+	self.twitter_tag = twitter_tag # Twitter Tag
+	self.yt_tag = yt_tag # Youtube Channel Tag
+	self.insta_tag = insta_tag # Instagram Tag
+	self.twitch_tag = twitch_tag # Twitch Channel Tag
+
+\end{lstlisting}
+
+From this, we can recognise the different social media accounts assigned to each along with some other basic information such as name and gender.
+
+Following that, we can input some basic variables to store for the future
+
+\section{Data Structures}
 
 
 \end{document}
