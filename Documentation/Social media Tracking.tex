@@ -1,8 +1,7 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage{listings}
 \usepackage{color}
-\usepackage{placeins}
- 
+% \usepackage{placeins} 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
@@ -59,7 +58,7 @@ Beginning with the Facebook interface, the program will request access to the Fa
 
 
 \newpage
-\FloatBarrier
+%\FloatBarrier
 \section{Twitter}
 With Twitter, the method will utilise \textbf{Tweepy} which is a library that allows for quick access to the Twitter API.
 \subsection{Code Rundown}
@@ -74,7 +73,7 @@ import sys
 \end{lstlisting}
 
 
-\FloatBarrier
+%\FloatBarrier
 Here in the code above, you can see the rundown on each dependency:
 \begin{itemize}
 	\item Tweepy is a Python library that we can use to access the Twitter API
@@ -216,23 +215,51 @@ Setting up the class is easy and we will give it a lot of variables related to t
 \begin{lstlisting}[language=python]
 
 class influencer:
-	def __init__(self, name, gender, gamer_tag, fb_tag, twitter_tag, yt_tag, insta_tag, twitch_tag)
-	self.name = name
-	self.gender = gender
-	self.gamer_tag = gamer_tag
-	self.fb_tag = fb_tag # Facebook Take
-	self.twitter_tag = twitter_tag # Twitter Tag
-	self.yt_tag = yt_tag # Youtube Channel Tag
-	self.insta_tag = insta_tag # Instagram Tag
-	self.twitch_tag = twitch_tag # Twitch Channel Tag
+	def __init__(self, name, gender, gamer_tag, fb_tag, twitter_tag, yt_tag, insta_tag, twitch_tag):
+		self.name = name
+		self.gender = gender
+		self.gamer_tag = gamer_tag
+		self.fb_tag = fb_tag # Facebook Take
+		self.twitter_tag = twitter_tag # Twitter Tag
+		self.yt_tag = yt_tag # Youtube Channel Tag
+		self.insta_tag = insta_tag # Instagram Tag
+		self.twitch_tag = twitch_tag # Twitch Channel Tag
+	
+	def return_name():
+		return self.name
 
 \end{lstlisting}
 
 From this, we can recognise the different social media accounts assigned to each along with some other basic information such as name and gender.
 
-Following that, we can input some basic variables to store for the future
+Following that, we can input some basic variables to store for the future and then subsequently call them with our return function that we had illustrated above. This is shown below:
+
+\begin{lstlisting}[language=python]
+
+# Defining the influencer
+
+influencer_1 = influencer(Jack, Male, JackTTV, Jack_FB, Jack_Twitter, Jack_YT, Jack_Insta, Jack_Twitch)
+
+# Now calling our return_name function
+
+print (influencer_1.return_name)
+
+# This will give us 'Jack' in the console.
+
+\end{lstlisting}
 
 \section{Data Structures}
+This section will focus on a simple datastructure that we will store our data in. Here we will use the pandas framework that is built on top of NumPy.
 
+\begin{lstlisting}[language=python]
+# The standard way of importing dependencies
+
+import numpy as np
+import pandas as pd
+
+
+
+
+\end{lstlisting}
 
 \end{document}
