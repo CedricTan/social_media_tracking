@@ -155,6 +155,21 @@ for name in name_dictionary:
 \section{Twitch}
 Twitch has API authentication through your Twitch account with the same OAuth processes and application interfaces that are necessary for the API request.
 \subsection{Code Rundown}
+The dependencies for the Twitch API are much simpler, we will only use requests.
+\begin{lstlisting}[language=python]
+
+import requests
+
+\end{lstlisting}
+And from there we can simply call the API and authenticate by sending in a header with our application Client-ID.
+
+We can begin by asking for some user information:
+\begin{lstlisting}[language=python]
+
+user_request = requests.get('https://api.twitch.tv/helix/users?login=' + user_name, headers={"Client-ID": "..."}
+
+
+\end{lstlisting}
 
 \newpage
 \section{Youtube}
