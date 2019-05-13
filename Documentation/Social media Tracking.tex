@@ -166,10 +166,24 @@ And from there we can simply call the API and authenticate by sending in a heade
 We can begin by asking for some user information:
 \begin{lstlisting}[language=python]
 
+user_name = 'Twitch_User '
+
 user_request = requests.get('https://api.twitch.tv/helix/users?login=' + user_name, headers={"Client-ID": "..."}
 
+# From here, we can get a JSON object to decode
+
+user_data = user_request.json()
+
+# Now we want the user_id to call another API to find total followers
+
+user_id = user_data['data'][0]['id']
+print('User ID: ' + user_id)
+
+This will return a number assigned to the user
 
 \end{lstlisting}
+From there, we want to see the number of followers that they have which involves calling another type of data 
+
 
 \newpage
 \section{Youtube}
